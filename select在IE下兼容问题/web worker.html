@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        select {
+   /* width: 100%; */
+   width:100px;
+   height: 34px;
+   border: solid 1px #0086EA;
+   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+   padding-right:34px;
+   padding-left: 10px;
+   /*将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   background: url("./assets/select_arrow.png") no-repeat scroll right center blue;
+   background-size: 15px 20px;
+   z-index: 100;
+}
+option{
+    z-index: -100;
+    width: 50px;
+    background: black;
+}
+ 
+
+select::-ms-expand { display: none; }
+    </style>
+</head>
+<body>
+    <select name="" id="">
+        <option value="">122</option>
+        <option value="">122</option>
+        <option value="">122</option>
+    </select>
+</body>
+</html>
